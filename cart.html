@@ -18,7 +18,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <title>ThapaCart</title>
+    <title>Shopping cart</title>
   </head>
   <body class="bg-light">
     <div class="container-fluid">
@@ -37,7 +37,7 @@
                     class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img"
                   >
                     <img
-                      src="images/img2.png"
+                      src="https://static.zara.net/assets/public/88b9/f14f/79f6485cbcf2/11e93fa9b2bb/06177199400-e1/06177199400-e1.jpg?ts=1723564544604&w=750"
                       class="img-fluid"
                       alt="cart img"
                     />
@@ -58,7 +58,7 @@
                           <li class="page-item">
                             <button
                               class="page-link"
-                              onclick="decreaseNumber('textbox','itemval')"
+                              onclick="decreaseQuantity('textbox','itemval')"
                             >
                               <i class="fas fa-minus"></i>
                             </button>
@@ -75,7 +75,7 @@
                           <li class="page-item">
                             <button
                               class="page-link"
-                              onclick="increaseNumber('textbox','itemval')"
+                              onclick="increaseQuantity('textbox','itemval')"
                             >
                               <i class="fas fa-plus"></i>
                             </button>
@@ -107,7 +107,7 @@
                     class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img"
                   >
                     <img
-                      src="images/img3.png"
+                      src="https://static.zara.net/assets/public/958e/5a18/463349c2a27f/8071ee28e6fc/04378010519-p/04378010519-p.jpg?ts=1725882479116&w=750"
                       class="img-fluid"
                       alt="cart img"
                     />
@@ -128,7 +128,7 @@
                           <li class="page-item">
                             <button
                               class="page-link"
-                              onclick="decreaseNumber('textbox1','itemval1')"
+                              onclick="decreaseQuantity('textbox1','itemval1')"
                             >
                               <i class="fas fa-minus"></i>
                             </button>
@@ -145,7 +145,7 @@
                           <li class="page-item">
                             <button
                               class="page-link"
-                              onclick="increaseNumber('textbox1','itemval1')"
+                              onclick="increaseQuantity('textbox1','itemval1')"
                             >
                               <i class="fas fa-plus"></i>
                             </button>
@@ -209,17 +209,18 @@
                         <input
                           type="text"
                           name=""
-                          id="discount_code1"
+                          value=""
+                          id="discount_code"
                           class="form-control font-weight-bold"
                           placeholder="Enter the discount code"
                         />
-                        <small id="error_trw" class="text-dark mt-3"
-                          >code is thapa</small
+                        <small id="error_trw" class="mt-3"
+                          >code is aniket</small
                         >
                       </div>
                       <button
                         class="btn btn-primary btn-sm mt-3"
-                        onclick="discount_code()"
+                        onclick="discountCode()"
                       >
                         Apply
                       </button>
@@ -251,5 +252,8 @@
       integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
       crossorigin="anonymous"
     ></script>
+
+    <!-- from javascript file -->
+    <script src="script.js"></script>
   </body>
 </html>
