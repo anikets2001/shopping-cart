@@ -103,3 +103,8 @@ h2 {
 .fa-heart:hover {
   color: red;
 }
+
+.remove-btn {
+  border: none;
+  background-color: white;
+}
