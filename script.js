@@ -83,3 +83,10 @@ const discountCode = () => {
     error.style.color = "red";
   }
 };
+
+
+// remove item from cart
+const removeItem = (itemId) => {
+  const item = document.getElementById(itemId);
+  item.remove();
+};
